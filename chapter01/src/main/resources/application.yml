@@ -1,0 +1,26 @@
+spring:
+  thymeleaf:
+    cache: false
+    enabled: false
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+      
+master:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/soulmate?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: 123
+    driverClassName: com.mysql.jdbc.Driver
+
+cluster:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/soulmate_cluster?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: 123
+    driverClassName: com.mysql.jdbc.Driver
+ 
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  
